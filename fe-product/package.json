@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "bw": "vite build --watch --base http://localhost:3002",
-    "preview": "vite preview"
+    "preview": "vite preview &&  npm install --progress=false"
   },
   "dependencies": {
     "pinia": "^2.1.6",
