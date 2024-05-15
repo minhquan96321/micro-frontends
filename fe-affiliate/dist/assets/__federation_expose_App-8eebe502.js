@@ -1,0 +1,1 @@
+import{importShared as r,__tla as _}from"./__federation_fn_import-9636f06d.js";import{_ as l,__tla as o}from"./Affiliate-1c2f1e26.js";let e,c=Promise.all([(()=>{try{return _}catch{}})(),(()=>{try{return o}catch{}})()]).then(async()=>{let t,a;({openBlock:t,createBlock:a}=await r("vue")),e={__name:"App",setup(m){return(p,s)=>(t(),a(l))}}});export{c as __tla,e as default};
