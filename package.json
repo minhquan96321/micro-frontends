@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "setup": "pnpm --filter ./* install",
+    "dev": "pnpm --parallel --filter ./fe-* bw & sleep 10 && pnpm --parallel --filter ./fe-* preview",
+    "build": "pnpm --parallel --filter ./fe-* bw && pnpm --parallel --filter ./fe-* build",
+    "preview": "pnpm --parallel --filter ./fe-* preview && pnpm --filter ./* install"
+  }
+}

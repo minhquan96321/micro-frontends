@@ -1,0 +1,165 @@
+// @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap");
+@import "primeicons/primeicons.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/font/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/font/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/font/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/font/Inter-Bold.ttf") format("truetype");
+}
+
+:root {
+  // --font-family: "Be Vietnam Pro", sans-serif !important;
+  // --font-family: "Inter", sans-serif;
+  --primary: red;
+  --secondary: green;
+  --background: #fafafa;
+  --touch: 60px;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background);
+  box-sizing: border-box;
+  color: #222;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  // font-family: "Be Vietnam Pro", Helvetica, Arial, sans-serif;
+  // font-family: Work Sans,sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+button {
+  border: 1px solid var(--primary);
+  padding: 4px 8px;
+}
+
+.p-component {
+  font-size: 14px;
+}
+
+.p-toast {
+  margin-top: var(--touch);
+  max-width: calc(100vw - 40px);
+  .p-toast-message .p-toast-message-content {
+    display: flex;
+    align-items: center;
+    .p-toast-detail {
+      margin: 0;
+    }
+  }
+  .p-toast-icon-close {
+    border: 0px;
+  }
+}
+
+.p-radiobutton {
+  background: grey;
+  input {
+    width: 16px;
+    height: 16px;
+  }
+  .p-radiobutton-box {
+    height: 16px;
+    width: 16px;
+  }
+
+  .p-radiobutton-box {
+  }
+
+  .p-radiobutton-icon {
+    background-color: #c73301;
+  }
+}
+
+.p-multiselect-panel {
+  border: 1px solid rgb(218, 218, 218);
+
+  .p-multiselect-header {
+    padding: 12px 0px 0 12px;
+  }
+
+  .p-multiselect-filter {
+    padding: 4px;
+  }
+
+  button {
+    border: none;
+  }
+  input {
+    border: 1px solid rgb(218, 218, 218);
+  }
+  .p-checkbox-box {
+    border: 1px solid rgb(218, 218, 218);
+  }
+}
+
+.p-checkbox {
+  input {
+    border: 1px solid rgb(218, 218, 218);
+  }
+  .p-checkbox-box {
+    border: 1px solid rgb(218, 218, 218);
+  }
+}
+
+.p-multiselect {
+  border: 1px solid rgb(218, 218, 218);
+}
+.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody > tr > td {
+  border-width: 0 0 1px 1px;
+}
+.p-datatable.p-datatable-gridlines .p-datatable-thead > tr > th {
+  border-width: 1px 0 1px 1px;
+}
+.p-datatable.p-datatable-gridlines .p-datatable-thead > tr > th:last-child {
+  border-width: 1px;
+}
+.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody > tr > td:last-child {
+  border-width: 0 1px 1px 1px;
+}
+
+.p-carousel-indicators {
+  .p-highlight {
+    button {
+      background-color: var(--primary);
+    }
+  }
+}
+
+.p-dialog-header-icons {
+  button {
+    border: 0px;
+  }
+}
+.shadow-footer {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
