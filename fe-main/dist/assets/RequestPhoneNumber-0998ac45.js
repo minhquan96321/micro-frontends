@@ -1,0 +1,1 @@
+import{importShared as l,__tla as o}from"./__federation_fn_import-419ff2a5.js";let r,n=Promise.all([(()=>{try{return o}catch{}})()]).then(async()=>{let e,t,a;({openBlock:e,createElementBlock:t}=await l("vue")),{ref:a}=await l("vue"),r={__name:"RequestPhoneNumber",setup(_){return a(!1),(u,c)=>(e(),t("div",null,"hello"))}}});export{n as __tla,r as default};

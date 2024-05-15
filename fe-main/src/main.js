@@ -17,6 +17,8 @@ usePrimeVue(window.app);
 
 window.$api.call("ui/listing", { shopId: config.shopId, type: "info" }).then((res) => {
   const remoteApp = res.rows;
+  console.log('remoteApp :', remoteApp);
+
   window.remoteApp = remoteApp.reduce((prev, cur) => ((prev[cur.name] = cur), prev), {});
   for (const remote of remoteApp) __federation_method_setRemote(remote.name, { url: () => Promise.resolve(remote.url), format: "esm", from: "vite" });
   const preloads = remoteApp.map((remote) => __federation_method_getRemote(remote.name, `./setup`));
