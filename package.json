@@ -2,7 +2,7 @@
   "scripts": {
     "setup": "pnpm --filter ./* install",
     "dev": "pnpm --parallel --filter ./fe-* bw & sleep 10 && pnpm --parallel --filter ./fe-* preview",
-    "build": "pnpm --parallel --filter ./fe-* bw && pnpm --parallel --filter ./fe-* build",
+    "build": "pnpm --parallel --filter ./fe-* bw ",
     "preview": "pnpm --parallel --filter ./fe-* preview"
   }
 }
